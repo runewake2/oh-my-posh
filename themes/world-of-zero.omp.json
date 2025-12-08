@@ -70,7 +70,8 @@
           "foreground": "#011627",
           "background": "#477fd8",
           "properties": {
-            "fetch_status": true
+            "fetch_status": true,
+            "ignore_working_copy": false
           }
         },
         {
