@@ -11,9 +11,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout code
-      uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8
+      uses: actions/checkout@0c366fd6a839edf440554fa01a7085ccba70ac98
     - name: Lint files
-      uses: articulate/actions-markdownlint@17b8abe7407cd17590c006ecc837c35e1ac3ed83
+      uses: DavidAnson/markdownlint-cli2-action@6b51ade7a9e4a75a7ad929842dd298a3804ebe8b
       with:
-          files: .
-          config: .markdownlint.yaml
+          config: .markdownlint-cli2.yaml
+          globs: '**/*.md'
