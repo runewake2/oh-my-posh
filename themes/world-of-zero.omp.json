@@ -80,7 +80,9 @@
           "background": "#477fd8",
           "properties": {
             "fetch_status": true,
-            "ignore_working_copy": false
+            "ignore_working_copy": false,
+            "fetch_ahead_counter": true,
+            "ahead_icon": "⇡"
           },
           "template": " \udb85\uddc6 \uf1fa {{.ClosestBookmarks}}{{if .Working.Changed}} \uf044 {{ .Working.String }}{{ end }}"
         },
