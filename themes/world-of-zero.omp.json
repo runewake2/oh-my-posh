@@ -22,7 +22,7 @@
           "powerline_symbol": "\ue0b0",
           "foreground": "#000000",
           "background": "#c386f1",
-          "template": "{{ if .SSHSession }}\ueba9 {{ end }}{{ .UserName }}@{{ .HostName }}"
+          "template": "{{ if .SSHSession }}\ueba9 {{ end }}{{ .UserName }}{{ if .SSHSession }}@{{ .HostName }}{{ end }}"
         },
         {
           "background": "#ef5350",
@@ -82,7 +82,7 @@
             "fetch_status": true,
             "ignore_working_copy": false
           },
-          "template": " \udb85\uddc6 \uf1fa{{.ChangeID}}{{if .Working.Changed}} \uf044 {{ .Working.String }}{{ end }}"
+          "template": " \udb85\uddc6 \uf1fa {{.ClosestBookmarks}}{{if .Working.Changed}} \uf044 {{ .Working.String }}{{ end }}"
         },
         {
           "background": "#575656",
