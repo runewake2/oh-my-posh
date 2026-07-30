@@ -81,7 +81,7 @@
           "properties": {
             "fetch_status": true,
             "ignore_working_copy": false,
-            "fetch_ahead_counter": true,
+            "fetch_ahead_counter": false,
             "ahead_icon": "⇡"
           },
           "template": " \udb85\uddc6 \uf1fa {{.ClosestBookmarks}}{{if .Working.Changed}} \uf044 {{ .Working.String }}{{ end }}"
